@@ -25,6 +25,9 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+    // SLF4J Simple binding
+    testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
 }
 
 compileJava {
@@ -35,10 +38,16 @@ compileTestJava {
     options.encoding = "UTF-8"
 }
 
-test {
-    // Use junit platform for unit tests
-    useJUnitPlatform()
-    testLogging {
+tasks.withType(Test).all { testTask ->
+    testTask.useJUnitPlatform()
+    testTask.testLogging {
         showStandardStreams = true
     }
+    testTask.systemProperty 'selenide.baseUrl', 'https://hotel.testplanisphere.dev'
+    testTask.systemProperty 'selenide.browserSize', '1920x1080'
+}
+
+task testOnCI(type: Test) {
+    group = 'verification'
+    systemProperty 'selenide.headless', 'true'
 }
