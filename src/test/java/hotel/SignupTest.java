@@ -19,7 +19,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 @ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("会員登録")
-public class SignupTest {
+class SignupTest {
 
   @AfterEach
   void tearDown() {
