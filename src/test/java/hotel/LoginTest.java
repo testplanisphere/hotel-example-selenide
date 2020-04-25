@@ -3,6 +3,7 @@ package hotel;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
+import com.codeborne.selenide.junit5.BrowserStrategyExtension;
 import com.codeborne.selenide.junit5.ScreenShooterExtension;
 import hotel.pages.TopPage;
 import org.junit.jupiter.api.AfterEach;
@@ -13,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(ScreenShooterExtension.class)
+@ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("ログイン")
 class LoginTest {
