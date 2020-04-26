@@ -14,4 +14,9 @@ public class TopPage {
     $(byLinkText("会員登録")).click();
     return page(SignupPage.class);
   }
+
+  public PlansPage goToPlansPage() {
+    $(byLinkText("宿泊予約")).click();
+    return page(PlansPage.class);
+  }
 }

@@ -1,10 +1,16 @@
 package hotel.pages;
 
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.SelenideElement;
 
 public class MyPage {
+
+  public PlansPage goToPlansPage() {
+    $(byLinkText("宿泊予約")).click();
+    return page(PlansPage.class);
+  }
 
   public SelenideElement getHeader() {
     return $("h2");
