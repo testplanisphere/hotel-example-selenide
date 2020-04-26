@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.*;
 import com.codeborne.selenide.SelenideElement;
 import java.time.LocalDate;
 
-public class SignupPage {
+public class SignupPage implements NavigationBar {
 
   public enum Rank {
     プレミアム会員("premium"), 一般会員("normal");

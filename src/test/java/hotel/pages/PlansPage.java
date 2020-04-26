@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.ElementsCollection;
 
-public class PlansPage {
+public class PlansPage implements NavigationBar {
 
   public ElementsCollection getPlans() {
     $("#plan-list > div[role=\"status\"]").waitUntil(disappears, 10000);

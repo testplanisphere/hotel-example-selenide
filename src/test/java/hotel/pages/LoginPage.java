@@ -4,7 +4,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.SelenideElement;
 
-public class LoginPage {
+public class LoginPage implements NavigationBar {
 
   public MyPage doLogin(String email, String password) {
     $("#email").setValue(email);
