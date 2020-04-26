@@ -171,7 +171,7 @@ class MyPageTest {
     iconPage.setColor("#000000");
     iconPage.submit();
 
-    myPage.getIconImage().shouldBe(exist);
+    myPage.getIconImage().should(exist);
     myPage.getIconImage().shouldHave(attribute("width", "70"));
     myPage.getIconImage().shouldHave(cssValue("backgroundColor", "rgba(0, 0, 0, 1)"));
   }
