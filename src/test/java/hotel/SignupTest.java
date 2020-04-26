@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
+@ExtendWith({BrowserStrategyExtension.class, ScreenShooterExtension.class})
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("会員登録")
 class SignupTest {

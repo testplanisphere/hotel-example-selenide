@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
+@ExtendWith({BrowserStrategyExtension.class, ScreenShooterExtension.class})
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("プラン一覧")
 class PlansTest {

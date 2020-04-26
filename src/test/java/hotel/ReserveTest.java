@@ -2,10 +2,8 @@ package hotel;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
-import static java.time.DayOfWeek.FRIDAY;
-import static java.time.DayOfWeek.SATURDAY;
-import static java.time.DayOfWeek.SUNDAY;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static java.time.DayOfWeek.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.junit5.BrowserStrategyExtension;
@@ -24,7 +22,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-@ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
+@ExtendWith({BrowserStrategyExtension.class, ScreenShooterExtension.class})
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("宿泊予約")
 class ReserveTest {
@@ -254,7 +252,7 @@ class ReserveTest {
     } else {
       expectedTotalBill = "合計 7,000円（税込み）";
     }
-    var expectedTerm = LONG_FORMATTER.format(expectedStart) + " 〜 " + LONG_FORMATTER.format(expectedEnd) + " 1泊";
+    final var expectedTerm = LONG_FORMATTER.format(expectedStart) + " 〜 " + LONG_FORMATTER.format(expectedEnd) + " 1泊";
 
     reservePage.setUsername("テスト太郎");
     reservePage.setContact("希望しない");
@@ -297,7 +295,7 @@ class ReserveTest {
     } else {
       expectedTotalBill = "合計 92,000円（税込み）";
     }
-    var expectedTerm = LONG_FORMATTER.format(expectedStart) + " 〜 " + LONG_FORMATTER.format(expectedEnd) + " 2泊";
+    final var expectedTerm = LONG_FORMATTER.format(expectedStart) + " 〜 " + LONG_FORMATTER.format(expectedEnd) + " 2泊";
 
     reservePage.setReserveDate(SHORT_FORMATTER.format(expectedStart));
     reservePage.setReserveTerm("2");

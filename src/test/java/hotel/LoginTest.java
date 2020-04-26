@@ -1,7 +1,7 @@
 package hotel;
 
-import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selenide.*;
 
 import com.codeborne.selenide.junit5.BrowserStrategyExtension;
 import com.codeborne.selenide.junit5.ScreenShooterExtension;
@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith({ BrowserStrategyExtension.class, ScreenShooterExtension.class })
+@ExtendWith({BrowserStrategyExtension.class, ScreenShooterExtension.class})
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("ログイン")
 class LoginTest {
