@@ -35,10 +35,6 @@ https://hotel.testplanisphere.dev/
 
 * JDK 11
 * Google Chrome
-* [ChromeDriver](https://chromedriver.chromium.org/downloads)
-
-ChromeDriverはダウンロードして環境変数`PATH`の通った場所に置いてください。
-Download Chromedriver and place it in the System `PATH`.
 
 #### テスト・静的解析の実行 / Run Tests and lint
 
