@@ -37,7 +37,7 @@ jobs:
       run: chmod +x gradlew
     - name: Lint and Test with Gradle (UN*X)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
-      run: ./gradlew clean testOnCI
+      run: ./gradlew clean check
     - name: Lint and Test with Gradle (Windows)
       if: matrix.os == 'windows-latest'
-      run: .\gradlew.bat clean testOnCI
+      run: .\gradlew.bat clean check

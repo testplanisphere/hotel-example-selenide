@@ -38,16 +38,12 @@ compileTestJava {
     options.encoding = "UTF-8"
 }
 
-tasks.withType(Test).all { testTask ->
-    testTask.useJUnitPlatform()
-    testTask.testLogging {
+test {
+    // Use junit platform for unit tests
+    useJUnitPlatform()
+    testLogging {
         showStandardStreams = true
     }
-    testTask.systemProperty 'selenide.baseUrl', 'https://hotel.testplanisphere.dev'
-    testTask.systemProperty 'selenide.browserSize', '1920x1080'
-}
-
-task testOnCI(type: Test) {
-    group = 'verification'
-    systemProperty 'selenide.headless', 'true'
+    systemProperty 'selenide.baseUrl', 'https://hotel.testplanisphere.dev'
+    systemProperty 'selenide.browserSize', '1920x1080'
 }
