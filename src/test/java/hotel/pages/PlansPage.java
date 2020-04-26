@@ -12,4 +12,14 @@ public class PlansPage {
     return $$(".card-title");
   }
 
+  public void openPlanByTitle(String title) {
+    $("#plan-list > div[role=\"status\"]").waitUntil(disappears, 10000);
+    for (var elm : $$(".card")) {
+      if (title.equals(elm.find(".card-title").getText())) {
+        elm.find("a").click();
+        break;
+      }
+    }
+  }
+
 }
