@@ -33,7 +33,7 @@ class SignupTest {
     var topPage = open("/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
-    signupPage.setEmail("new-user@gmail.com");
+    signupPage.setEmail("new-user@example.com");
     signupPage.setPassword("password");
     signupPage.setPasswordConfirmation("password");
     signupPage.setUsername("新規ユーザ１");
@@ -113,7 +113,7 @@ class SignupTest {
     var topPage = open("/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
-    signupPage.setEmail("new-user@gmail.com");
+    signupPage.setEmail("new-user@example.com");
     signupPage.setPassword("password");
     signupPage.setPasswordConfirmation("password");
     signupPage.setUsername("新規ユーザ１");
@@ -135,7 +135,7 @@ class SignupTest {
     var topPage = open("/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
-    signupPage.setEmail("new-user@gmail.com");
+    signupPage.setEmail("new-user@example.com");
     signupPage.setPassword("password");
     signupPage.setPasswordConfirmation("123456789");
     signupPage.setUsername("新規ユーザ１");
