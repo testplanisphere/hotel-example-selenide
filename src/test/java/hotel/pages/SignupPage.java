@@ -55,7 +55,7 @@ public class SignupPage implements NavigationBar {
   }
 
   public void setBirthday(LocalDate birthday) {
-    String input = birthday != null ? birthday.toString() : "";
+    var input = birthday != null ? birthday.toString() : "";
     executeJavaScript("arguments[0].value = arguments[1]", $("#birthday"), input);
   }
 
