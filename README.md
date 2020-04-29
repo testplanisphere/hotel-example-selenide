@@ -1,5 +1,7 @@
 # hotel-example-selenide
 
+![selenide](https://github.com/testplanisphere/hotel-example-selenide/workflows/selenide/badge.svg)
+
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
 This project is example codes for learning test automation.
 
@@ -49,3 +51,9 @@ gradlew.bat clean check
 ```
 ./gradlew clean check
 ```
+
+### 変更履歴 / Changelog
+
+#### v1.0.0 (2020-04-29)
+
+* 正式リリース
