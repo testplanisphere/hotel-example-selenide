@@ -54,6 +54,13 @@ gradlew.bat clean check
 
 ### 変更履歴 / Changelog
 
+#### v1.1.0 (2020-05-31)
+
+* [#3](https://github.com/testplanisphere/hotel-example-selenide/pull/3) Selenideを5.12.1にアップデート
+* [#5](https://github.com/testplanisphere/hotel-example-selenide/pull/5) Dependabotを導入
+* [#8](https://github.com/testplanisphere/hotel-example-selenide/pull/8) Github actions/cacheをv2にアップデート
+* [#9](https://github.com/testplanisphere/hotel-example-selenide/pull/9) Gradleを6.4.1にアップデート
+
 #### v1.0.0 (2020-04-29)
 
 * 正式リリース
