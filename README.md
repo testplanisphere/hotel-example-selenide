@@ -54,6 +54,11 @@ gradlew.bat clean check
 
 ### 変更履歴 / Changelog
 
+#### v2020.6.0 (2020-06-30)
+
+* [#11](https://github.com/testplanisphere/hotel-example-selenide/pull/11) Bump Gradle from 6.4.1 to 6.5.1
+* [#12](https://github.com/testplanisphere/hotel-example-selenide/pull/12) Bump selenide from 5.12.1 to 5.12.2
+
 #### v1.1.0 (2020-05-31)
 
 * [#3](https://github.com/testplanisphere/hotel-example-selenide/pull/3) Selenideを5.12.1にアップデート
