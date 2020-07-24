@@ -36,7 +36,7 @@ class ReserveTest {
     if (WebDriverRunner.getWebDriver().getWindowHandles().size() > 1) {
       closeWindow();
     }
-    switchTo().window("宿泊プラン一覧 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊プラン一覧 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     clearBrowserCookies();
   }
 
@@ -47,7 +47,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var tomorrow = SHORT_FORMATTER.format(LocalDate.now().plusDays(1));
@@ -84,7 +84,7 @@ class ReserveTest {
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
     var plansPage = myPage.goToPlansPage();
     plansPage.openPlanByTitle("プレミアムプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var tomorrow = SHORT_FORMATTER.format(LocalDate.now().plusDays(1));
@@ -119,7 +119,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     reservePage.setReserveDate("");
@@ -139,7 +139,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var today = SHORT_FORMATTER.format(LocalDate.now());
@@ -161,7 +161,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var after90 = SHORT_FORMATTER.format(LocalDate.now().plusDays(91));
@@ -183,7 +183,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     reservePage.setReserveDate("12/3//345");
@@ -203,7 +203,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     reservePage.setUsername("");
@@ -222,7 +222,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     reservePage.setUsername("");
@@ -241,7 +241,7 @@ class ReserveTest {
     var topPage = open("/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var expectedStart = LocalDate.now().plusDays(1);
@@ -282,7 +282,7 @@ class ReserveTest {
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
     var plansPage = myPage.goToPlansPage();
     plansPage.openPlanByTitle("プレミアムプラン");
-    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化デモサイト");
+    switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
     var reservePage = page(ReservePage.class);
 
     var expectedStart = LocalDate.now().plusDays(90);
