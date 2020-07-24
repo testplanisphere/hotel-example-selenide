@@ -1,12 +1,12 @@
-name: selenide
+name: selenide-ja
 
 on:
   push:
     branches:
-      - master
+      - $default-branch
   pull_request:
   schedule:
-    - cron: '30 3 * * *'
+    - cron: '0 3 * * *'
 
 jobs:
   test:
