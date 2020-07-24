@@ -3,7 +3,7 @@ name: selenide-ja
 on:
   push:
     branches:
-      - $default-branch
+      - master
   pull_request:
   schedule:
     - cron: '0 3 * * *'
