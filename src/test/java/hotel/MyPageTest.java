@@ -32,7 +32,7 @@ class MyPageTest {
   @Order(1)
   @DisplayName("定義済みユーザの情報が表示されること_ichiro")
   void testMyPageExistUserOne() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
 
@@ -50,7 +50,7 @@ class MyPageTest {
   @Order(2)
   @DisplayName("定義済みユーザの情報が表示されること_sakura")
   void testMyPageExistUserTwo() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("sakura@example.com", "pass1234");
 
@@ -68,7 +68,7 @@ class MyPageTest {
   @Order(3)
   @DisplayName("定義済みユーザの情報が表示されること_jun")
   void testMyPageExistUserThree() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("jun@example.com", "pa55w0rd!");
 
@@ -86,7 +86,7 @@ class MyPageTest {
   @Order(4)
   @DisplayName("定義済みユーザの情報が表示されること_yoshiki")
   void testMyPageExistUserFour() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("yoshiki@example.com", "pass-pass");
 
@@ -104,7 +104,7 @@ class MyPageTest {
   @Order(5)
   @DisplayName("新規登録したユーザの情報が表示されること")
   void testMyPageNewUser() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("new-user@example.com");
@@ -133,7 +133,7 @@ class MyPageTest {
   @Order(6)
   @DisplayName("アイコン設定で画像以外のファイルはエラーとなること")
   void testIconNotImage() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("new-user@example.com", "11111111");
 
@@ -147,7 +147,7 @@ class MyPageTest {
   @Order(7)
   @DisplayName("アイコン設定で10KBを越えるファイルはエラーとなること")
   void testIconOverSize() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("new-user@example.com", "11111111");
 
@@ -161,7 +161,7 @@ class MyPageTest {
   @Order(8)
   @DisplayName("設定したアイコンがマイページに表示されること")
   void testIconSuccess() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("new-user@example.com", "11111111");
 
@@ -180,7 +180,7 @@ class MyPageTest {
   @Order(9)
   @DisplayName("新規登録したユーザが削除できること")
   void testDeleteUser() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("new-user@example.com", "11111111");
 

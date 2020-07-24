@@ -1,44 +1,43 @@
-# hotel-example-selenide
+# hotel-example-selenide-ja
 
-![selenide](https://github.com/testplanisphere/hotel-example-selenide/workflows/selenide/badge.svg)
+![selenide-ja](https://github.com/testplanisphere/hotel-example-selenide-ja/workflows/selenide-ja/badge.svg)
 
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
-This project is example codes for learning test automation.
 
-### テスト対象 / Test Object
+### テスト対象
 
-https://hotel.testplanisphere.dev/
+https://hotel.testplanisphere.dev/ja/
 
-### 概要 / Overview
+### 概要
 
-#### プログラミング言語 / Programming Language
+#### プログラミング言語
 
 * Java
 
-#### 自動化フレームワーク / Automation Framework
+#### 自動化フレームワーク
 
 * [Selenide](https://selenide.org/)
 
-#### テスティングフレームワーク / Testing Framework
+#### テスティングフレームワーク
 
 * [JUnit 5](https://junit.org/junit5/)
 
-#### ビルドツール / Build Tool
+#### ビルドツール
 
 * [Gradle](https://gradle.org/)
 
-#### 静的解析ツール / Lint Tool
+#### 静的解析ツール
 
 * [Checkstyle](https://checkstyle.sourceforge.io/)
 
-### 実行方法 / How to Run
+### 実行方法
 
-#### 必須環境 / Requirements
+#### 必須環境
 
 * JDK 11
 * Google Chrome
 
-#### テスト・静的解析の実行 / Run Tests and lint
+#### テスト・静的解析の実行
 
 ##### Windows
 
@@ -52,19 +51,19 @@ gradlew.bat clean check
 ./gradlew clean check
 ```
 
-### 変更履歴 / Changelog
+### 変更履歴
 
 #### v2020.6.0 (2020-06-30)
 
-* [#11](https://github.com/testplanisphere/hotel-example-selenide/pull/11) Bump Gradle from 6.4.1 to 6.5.1
-* [#12](https://github.com/testplanisphere/hotel-example-selenide/pull/12) Bump selenide from 5.12.1 to 5.12.2
+* [#11](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/11) Bump Gradle from 6.4.1 to 6.5.1
+* [#12](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/12) Bump selenide from 5.12.1 to 5.12.2
 
 #### v1.1.0 (2020-05-31)
 
-* [#3](https://github.com/testplanisphere/hotel-example-selenide/pull/3) Selenideを5.12.1にアップデート
-* [#5](https://github.com/testplanisphere/hotel-example-selenide/pull/5) Dependabotを導入
-* [#8](https://github.com/testplanisphere/hotel-example-selenide/pull/8) Github actions/cacheをv2にアップデート
-* [#9](https://github.com/testplanisphere/hotel-example-selenide/pull/9) Gradleを6.4.1にアップデート
+* [#3](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/3) Selenideを5.12.1にアップデート
+* [#5](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/5) Dependabotを導入
+* [#8](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/8) Github actions/cacheをv2にアップデート
+* [#9](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/9) Gradleを6.4.1にアップデート
 
 #### v1.0.0 (2020-04-29)
 

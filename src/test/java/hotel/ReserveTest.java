@@ -44,7 +44,7 @@ class ReserveTest {
   @Order(1)
   @DisplayName("画面表示時の初期値が設定されていること_未ログイン")
   void testPageInitValue() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -79,7 +79,7 @@ class ReserveTest {
   @Order(2)
   @DisplayName("画面表示時の初期値が設定されていること_ログイン済み")
   void testPageInitValueLogin() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
     var plansPage = myPage.goToPlansPage();
@@ -116,7 +116,7 @@ class ReserveTest {
   @Order(3)
   @DisplayName("入力値が空白でエラーとなること")
   void testBlankInputOne() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -136,7 +136,7 @@ class ReserveTest {
   @Order(4)
   @DisplayName("不正な入力値でエラーとなること_小")
   void testInvalidInputSmall() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -158,7 +158,7 @@ class ReserveTest {
   @Order(5)
   @DisplayName("不正な入力値でエラーとなること_大")
   void testInvalidInputBig() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -180,7 +180,7 @@ class ReserveTest {
   @Order(6)
   @DisplayName("不正な入力値でエラーとなること_文字列")
   void testInvalidInputOther() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -200,7 +200,7 @@ class ReserveTest {
   @Order(7)
   @DisplayName("不正な入力値でエラーとなること_確定時_メール選択")
   void testInvalidInputOnSubmitEmail() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -219,7 +219,7 @@ class ReserveTest {
   @Order(8)
   @DisplayName("不正な入力値でエラーとなること_確定時_電話選択")
   void testInvalidInputOnSubmitTel() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -238,7 +238,7 @@ class ReserveTest {
   @Order(9)
   @DisplayName("宿泊予約が完了すること_未ログイン_初期値")
   void testReserveSuccess() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     plansPage.openPlanByTitle("お得な特典付きプラン");
     switchTo().window("宿泊予約 | HOTEL PLANISPHERE - テスト自動化練習サイト");
@@ -277,7 +277,7 @@ class ReserveTest {
   @Order(10)
   @DisplayName("宿泊予約が完了すること_ログイン")
   void testReserveSuccess2() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
     var plansPage = myPage.goToPlansPage();
