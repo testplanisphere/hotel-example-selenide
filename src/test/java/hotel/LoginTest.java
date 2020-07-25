@@ -28,7 +28,7 @@ class LoginTest {
   @Order(1)
   @DisplayName("定義済みユーザでログインができること")
   void testLoginSuccess() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
 
@@ -39,7 +39,7 @@ class LoginTest {
   @Order(2)
   @DisplayName("未入力でエラーとなること")
   void testLoginFailBlank() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     loginPage.doLogin("", "");
 
@@ -51,7 +51,7 @@ class LoginTest {
   @Order(3)
   @DisplayName("未登録のユーザでエラーとなること")
   void testLoginFailUnregister() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     loginPage.doLogin("error@example.com", "error");
 

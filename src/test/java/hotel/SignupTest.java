@@ -30,7 +30,7 @@ class SignupTest {
   @Order(1)
   @DisplayName("ユーザの新規登録ができること")
   void testSignupSuccess() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("new-user@example.com");
@@ -52,7 +52,7 @@ class SignupTest {
   @Order(2)
   @DisplayName("必須項目を未入力にするとエラーとなること")
   void testSignupErrorBlank() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("");
@@ -81,7 +81,7 @@ class SignupTest {
   @Order(3)
   @DisplayName("指定のフォーマット外の入力でエラーとなること")
   void testSignupErrorInvalid() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("a");
@@ -110,7 +110,7 @@ class SignupTest {
   @Order(4)
   @DisplayName("登録済みのメールアドレスはエラーとなること")
   void testSignupErrorDouble() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("new-user@example.com");
@@ -132,7 +132,7 @@ class SignupTest {
   @Order(5)
   @DisplayName("入力パスワードが一致しないとエラーとなること")
   void testSignupErrorUnMatchPassword() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
 
     var signupPage = topPage.goToSignupPage();
     signupPage.setEmail("new-user@example.com");

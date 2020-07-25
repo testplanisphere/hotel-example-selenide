@@ -29,7 +29,7 @@ class PlansTest {
   @Order(1)
   @DisplayName("未ログイン状態でプラン一覧が表示されること")
   void testPlanListNotLogin() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var plansPage = topPage.goToPlansPage();
     var plans = plansPage.getPlans();
 
@@ -47,7 +47,7 @@ class PlansTest {
   @Order(2)
   @DisplayName("一般会員でログイン状態でプラン一覧が表示されること")
   void testPlanListLoginNormal() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("sakura@example.com", "pass1234");
     var plansPage = myPage.goToPlansPage();
@@ -69,7 +69,7 @@ class PlansTest {
   @Order(3)
   @DisplayName("プレミアム会員でログイン状態でプラン一覧が表示されること")
   void testPlanListLoginPremium() {
-    var topPage = open("/", TopPage.class);
+    var topPage = open("/ja/", TopPage.class);
     var loginPage = topPage.goToLoginPage();
     var myPage = loginPage.doLogin("ichiro@example.com", "password");
     var plansPage = myPage.goToPlansPage();
