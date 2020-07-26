@@ -53,6 +53,15 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.7.0 (2020-07-26)
+
+* [#14](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/14) Bump selenide from 5.12.2 to 5.13.0
+* [#15](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/15) fix site title
+* [#16](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/16) Update Dependabot config file
+* [#17](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/17) update actions and dependabot
+* [#18](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/18) fix branch name
+* [#19](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/19) move to ja site
+
 #### v2020.6.0 (2020-06-30)
 
 * [#11](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/11) Bump Gradle from 6.4.1 to 6.5.1
