@@ -53,6 +53,12 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.9.0 (2020-09-30)
+
+* [#25](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/25) Bump junit-jupiter-api from 5.6.2 to 5.7.0
+* [#26](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/26) Bump junit-jupiter-engine from 5.6.2 to 5.7.0
+* [#27](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/27) Bump selenide from 5.14.2 to 5.15.0
+
 #### v2020.8.0 (2020-08-31)
 
 * [#21](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/21) Bump Gradle from 6.5.1 to 6.6.1
