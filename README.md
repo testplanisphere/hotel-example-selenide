@@ -1,6 +1,6 @@
 # hotel-example-selenide-ja
 
-![selenide-ja](https://github.com/testplanisphere/hotel-example-selenide-ja/workflows/selenide-ja/badge.svg)
+[![selenide-ja](https://github.com/testplanisphere/hotel-example-selenide-ja/actions/workflows/test.yml/badge.svg)](https://github.com/testplanisphere/hotel-example-selenide-ja/actions/workflows/test.yml)
 
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
 
@@ -52,6 +52,19 @@ gradlew.bat clean check
 ```
 
 ### 変更履歴
+
+#### v2021.2.0 (2021-02-28)
+
+* [#37](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/37) Bump selenide from 5.15.0 to 5.18.0
+* [#39](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/39) Bump junit-jupiter-engine from 5.7.0 to 5.7.1
+* [#40](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/40) Bump junit-jupiter-api from 5.7.0 to 5.7.1
+* [#41](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/41) Update branch name
+* [#42](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/42) Bump Gradle from 6.6.1 to 6.8.2
+* [#43](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/43) Update cache setting
+* [#44](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/44) Remove jcenter
+* [#45](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/45) Bump selenide from 5.18.0 to 5.18.1
+* [#46](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/46) Bump selenide from 5.18.1 to 5.19.0
+* [#47](https://github.com/testplanisphere/hotel-example-selenide-ja/pull/47) Bump Gradle from 6.8.2 to 6.8.3
 
 #### v2020.9.0 (2020-09-30)
 
